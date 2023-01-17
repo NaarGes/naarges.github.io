@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:portfolio/config/routes.dart';
 import 'package:portfolio/ui/pages/home_page.dart';
 import 'package:portfolio/utils/strings.dart';
 
@@ -13,11 +12,11 @@ class PortfolioApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp(
+    return const GetMaterialApp(
       title: Strings.appTitle,
       debugShowCheckedModeBanner: false,
       // getPages: Routes.pages,
-      home: const HomePage(),
+      home: HomePage(),
     );
   }
 }
